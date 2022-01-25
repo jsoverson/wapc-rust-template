@@ -1,10 +1,14 @@
 name: rust
 description: Basic Rust waPC project
+templates:
+  - Cargo.toml
 variables:
-- name: description
-  description: The project description
-  prompt: Please enter the project description
-- name: version
-  description: The project version
-  prompt: Please enter the version
-  default: 0.0.1
+  - name: name
+    message: Enter the project name
+  - name: description
+    message: Enter the project description
+  - name: author
+    message: Enter the project's author
+  - name: version
+    message: Enter your initial version
+    initial: 0.0.1
