@@ -1,9 +1,9 @@
 schema: schema.widl
 generates:
   src/generated.rs:
+    overwrite: true
     module: "@wapc/codegen-rust-guest"
     visitorClass: ModuleVisitor
   src/lib.rs:
-    ifNotExists: true
     module: "@wapc/codegen-rust-guest"
     visitorClass: ScaffoldVisitor
