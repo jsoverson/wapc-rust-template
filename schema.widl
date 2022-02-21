@@ -1,5 +1,4 @@
-namespace "greeting"
 
 interface {
-  sayHello(name: string): string
+  echo(msg: string): string
 }
