@@ -1,11 +1,9 @@
 schema: schema.widl
 generates:
   src/generated.rs:
-    module: '@wapc/widl-codegen/rust'
+    module: "@wapc/codegen-rust-guest"
     visitorClass: ModuleVisitor
   src/lib.rs:
     ifNotExists: true
-    module: '@wapc/widl-codegen/rust'
+    module: "@wapc/codegen-rust-guest"
     visitorClass: ScaffoldVisitor
-    config:
-      use: generated
