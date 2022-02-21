@@ -5,7 +5,7 @@ all: deps codegen build
 deps:
 
 codegen:
-	wapc generate codegen.yaml
+	wapc codegen wapc.yaml
 
 build:
 	cargo build --target wasm32-unknown-unknown --release
